@@ -6,7 +6,7 @@ import { Provider as JotaiProvider } from "jotai";
 
 function MyApp({ Component, pageProps }) {
   const userData = useUserData();
-  console.log("userData FROM MAIN: ", userData);
+  // console.log("userData FROM MAIN: ", userData);
 
   return (
     <UserContext.Provider value={userData}>
