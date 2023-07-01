@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation';
 import { useContext, useRef } from 'react';
 import { UserContext } from '@lib/context';
 import { auth } from '@lib/firebase';
-//import ModalButton from './Modal';
+import {ModalButton} from './Modal';
 
 // Top navbar
 export default function Navbar() {
@@ -32,7 +32,7 @@ export default function Navbar() {
               <button onClick={signOut}>Sign Out</button>
             </li>
             <li> 
-               {/* <ModalButton eventData={null} /> */}
+            <ModalButton eventData={null} />
             </li>
             <li>
               <Link href={`/${username}`}>
