@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import { UserContext } from '@lib/context';
 import { useUserData } from '@lib/hooks';
 import Navbar from '@components/Navbar';
+import Footer from '@components/Footer';
 import { Provider as JotaiProvider } from "jotai";
 
 function MyApp({ Component, pageProps }) {
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
       <JotaiProvider>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </JotaiProvider>
     </UserContext.Provider>
   );
