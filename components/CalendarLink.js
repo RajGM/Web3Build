@@ -4,13 +4,13 @@ export default function CalendarLink({ link, text }) {
 
     return (
         <div className='calendarDiv'>
-            <div class="container" >
-                <div class="content" >
+            <div className="container" >
+                <div className="content" >
                     {link}
                 </div>
             </div>
-            <div class="container" >
-                <div class="content" style={{textAlign:'right'}}>
+            <div className="container" >
+                <div className="content" style={{textAlign:'right'}}>
                     <ClickToCopy text={text} />
                 </div>
             </div>

@@ -33,7 +33,7 @@ export const MyFormComponent = ({ eventData }) => {
 
     return (
         <Formik
-            initialValues={{ category: 'Mentor' }}
+            initialValues={{ category: 'Hackathon' }}
             onSubmit={(resetForm) => { false, resetForm() }}
         >
             {(formik) => (
